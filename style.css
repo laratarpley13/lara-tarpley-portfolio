@@ -1,39 +1,44 @@
 * {
-    background-color: white;
     margin: 0px;
+}
+
+body {
+    background-image: url("circles-light.png");
 }
 
 .header {
     margin-bottom: 20px;
     position: relative;
-
 }
 
 .img {
-    width: 80px;
-    height: 80px;
-    background-color: #ad0028;
-    border-radius: 50%;
     position: absolute;
-    top: 25px;
+    top: 28px;
     left: 10%;
+}
+
+.img img {
+    width: 110px;
+    height: 110px;
 }
 
 .navigation {
     background-color: white;
+    border-top: solid 1px lightgray;
     border-left: solid 1px lightgray;
     border-right: solid 1px lightgray;
     border-bottom: solid 1px lightgray;
+    margin-top: 10px;
     margin-left: 8%;
     margin-right: 8%;
-    padding-top: 50px;    
+    padding-top: 50px;   
 }
 
 .navigation ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0 0 7px 0;
     text-align: right;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .navigation ul li {
@@ -44,5 +49,47 @@
 
 .navigation ul li a {
     text-decoration: none;
+    color: #302c2d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navigation ul li a:hover {
+    color: #ad0028;
+}
+
+.navigation ul li a:active {
+    color: #ad0028;
+    text-decoration: underline;
+}
+
+.home {
+    background-color: white;
+    border: solid 1px lightgray;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 80px;
+    height: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.home div {
+    display: inline-block;
+    text-align: left;
+    color: #302c2d;
+}
+
+.home div h1 {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 40px 50px 20px;
+    padding: 15px;
+}
+
+.home div p {
+    font-size: 20px;
+    margin: 20px 50px;
+    padding: 15px;
+    line-height: 1.8;
 }
 

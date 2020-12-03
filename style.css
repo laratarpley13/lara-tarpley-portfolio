@@ -68,7 +68,7 @@ body {
     margin-left: 8%;
     margin-right: 8%;
     margin-top: 80px;
-    height: 400px;
+    height: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
@@ -88,37 +88,146 @@ body {
 
 .home div p {
     font-size: 20px;
-    margin: 20px 50px;
+    margin: 20px 50px 30px;
     padding: 15px;
     line-height: 1.8;
 }
 
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
+.about {
+    background-color: white;
+    border: solid 1px lightgray;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 80px;
+    height: autox;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
-@media screen and (min-width: 700px){
-    .projects {
-        flex-direction: row;
-    }
+.about div {
+    display: inline-block;
+    text-align: left;
+    color: #302c2d;
+    padding-bottom: 20px;
+}
+
+.about div h1 {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 40px 50px 20px;
+    padding: 15px;
+}
+
+.about div p {
+    font-size: 20px;
+    margin: 20px 50px;
+    padding: 5px 15px;
+    line-height: 1.8;
 }
 
 .project {
     border: 1px solid lightgray;
     background-color: white;
-    flex-basis: 30%;
-    margin: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 50px;
 }
 
-.project .img {
-    height: 350px;
-    background-size: cover;
-    background-position: cover;
+.project .project-img {
+    padding-top: 20px;
+    padding-bottom: 25px;
+
+}
+
+.project .project-img img{
+    width: 94%;
+    height: auto;
+    text-align: center;
+    display: block;   
+    margin: auto;
+    box-shadow: 5px 5px 18px lightgray;
+
 }
 
 .projects .details {
-    padding: 0 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5px 20px 20px;
+}
+
+.projects .details h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #302c2d;
+    padding-bottom: 20px;
+}
+
+.projects .details p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    color: #302c2d;
+}
+
+.projects .project-links {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
+}
+
+.projects .project-links a {
+    font-size: 16px;
+    padding-right: 12px;
+    color: #ad0028;
+    font-weight: 600;
+}
+
+.contact {
+    background-color: white;
+    border: solid 1px lightgray;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 80px;
+    height: autox;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.contact .contact-details {
+    color: #302c2d;
+    padding-bottom: 50px;
+}
+
+.contact .contact-details h1 {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 40px 50px 20px;
+    padding: 15px;
+}
+
+.contact .contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-details .contact-icons {
+    padding: 20px;
+}
+
+.contact .contact-details .fa-github {
+    font-size: 70px;
+    color: #ad0028;
+    padding: 20px;
+}
+
+.contact .contact-details .fa-envelope {
+    font-size: 70px;
+    color: #ad0028;
+    padding: 20px;
+}
+
+.contact .contact-details .fa-linkedin {
+    font-size: 70px;
+    color: #ad0028;
+    padding: 20px;
 }

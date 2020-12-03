@@ -93,3 +93,32 @@ body {
     line-height: 1.8;
 }
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 700px){
+    .projects {
+        flex-direction: row;
+    }
+}
+
+.project {
+    border: 1px solid lightgray;
+    background-color: white;
+    flex-basis: 30%;
+    margin: 20px;
+}
+
+.project .img {
+    height: 350px;
+    background-size: cover;
+    background-position: cover;
+}
+
+.projects .details {
+    padding: 0 20px;
+}

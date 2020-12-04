@@ -43,7 +43,7 @@ body {
 
 .navigation ul li {
     display: inline;
-    font-size: 25px;
+    font-size: 14px;
     margin: 10px;
 }
 
@@ -62,12 +62,20 @@ body {
     text-decoration: underline;
 }
 
+@media all and (min-width: 650px) {
+    .navigation ul li {
+        font-size: 20px;
+    }
+}
+
 .home {
     background-color: white;
     border: solid 1px lightgray;
     margin-left: 8%;
     margin-right: 8%;
     margin-top: 80px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
     height: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -99,6 +107,7 @@ body {
     margin-left: 8%;
     margin-right: 8%;
     margin-top: 80px;
+    margin-bottom: 50px;
     height: autox;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -187,7 +196,8 @@ body {
     margin-left: 8%;
     margin-right: 8%;
     margin-top: 80px;
-    height: autox;
+    margin-bottom: 50px;
+    height: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
@@ -208,10 +218,25 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
-.contact-details .contact-icons {
-    padding: 20px;
+.contact-details .contact-icon {
+    height: 100px;
+    width: 160px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-details .contact-icon a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #302c2d;
+}
+
+.contact-details .contact-icon a:hover {
+    color: #ad0028;
 }
 
 .contact .contact-details .fa-github {

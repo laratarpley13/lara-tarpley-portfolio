@@ -31,40 +31,92 @@ body {
     margin-top: 10px;
     margin-left: 8%;
     margin-right: 8%;
-    padding-top: 50px;   
+    padding-top: 50px;
+    height: 40px   
 }
 
-.navigation ul {
-    list-style-type: none;
-    padding: 0 0 7px 0;
-    text-align: right;
-    margin-right: 10px;
-}
+@media all and (max-width: 649px) {
+    .nav-large-screen {
+        display: none;
+    }
 
-.navigation ul li {
-    display: inline;
-    font-size: 14px;
-    margin: 10px;
-}
+    .nav-small-screen .bars-icon {
+        background-color: #302c2d;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        border-radius: 15%;
+        position: absolute;
+        left: 78%;
+        top: 15px;
+    }
 
-.navigation ul li a {
-    text-decoration: none;
-    color: #302c2d;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+    .nav-small-screen .bars-icon:hover {
+        background-color: #ad0028;
+    }
+    
+    .bars-icon .fa-bars {
+        color: white;
+        font-size: 40px;
+        padding-top: 10px;
+    }
 
-.navigation ul li a:hover {
-    color: #ad0028;
-}
+    .nav-small-screen .nav-links {
+        position: absolute;
+        left: 63%;
+        top: 42px;
+        background-color: #ad0028;
+        text-align: left;
+        padding: 14px;
+        border-radius: 6%;
+    }
 
-.navigation ul li a:active {
-    color: #ad0028;
-    text-decoration: underline;
+    .nav-small-screen .nav-links a {
+        display: block;
+        color: white;
+        font-size: 20px;
+        margin: 5px;
+        padding: 7px;
+        text-decoration: none;
+    }
+
+    .nav-small-screen .nav-links a:hover {
+        color: #302c2d;
+    }
+
+    .hidden {
+        display: none;
+    }
 }
 
 @media all and (min-width: 650px) {
-    .navigation ul li {
+    
+     .navigation .nav-large-screen {
+        list-style-type: none;
+        padding: 0 0 7px 0;
+        text-align: right;
+        margin-right: 10px;
+    }
+    
+    .navigation .nav-large-screen li {
+        display: inline;
         font-size: 20px;
+        margin: 10px;
+    }
+    
+    .navigation .nav-large-screen li a {
+        text-decoration: none;
+        color: #302c2d;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .navigation .nav-large-screen li a:hover {
+        color: #ad0028;
+    }
+    
+    .navigation .nav-large-screen li a:active {
+        color: #ad0028;
+        text-decoration: underline;
     }
 }
 

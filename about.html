@@ -6,6 +6,7 @@
     <title>Lara Tarpley</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="portfolio-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -14,12 +15,23 @@
             <img src="portfolio-logo.png" alt="LT logo">
         </div>
         <div class="navigation">
-            <ul>
+            <ul class="nav-large-screen">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>                
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="nav-small-screen">
+                <div class="nav-links hidden">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>                
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="bars-icon">
+                    <a href="#" class="icon"><i class="fa fa-bars"></i></a>
+                </div>       
+            </div>
         </div>
     </section>
 
@@ -36,4 +48,8 @@
                 almost anything crafty, and exploring the outdoors.
             </p>
         </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+
     </section>

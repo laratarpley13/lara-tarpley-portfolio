@@ -248,6 +248,10 @@ body {
     font-weight: 600;
 }
 
+.projects .project .description {
+    padding-bottom: 20px;
+}
+
 .contact {
     background-color: white;
     border: solid 1px lightgray;

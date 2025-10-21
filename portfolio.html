@@ -1,138 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lara Tarpley</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="portfolio-logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="portfolio-logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <section class="header">
-        <div class="img">
-            <img src="portfolio-logo.png" alt="LT logo">
+      <div class="img">
+        <img src="portfolio-logo.png" alt="LT logo" />
+      </div>
+      <div class="navigation">
+        <ul class="nav-large-screen">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-small-screen">
+          <div class="nav-links hidden">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="bars-icon">
+            <a href="#" class="icon"><i class="fa fa-bars"></i></a>
+          </div>
         </div>
-        <div class="navigation">
-            <ul class="nav-large-screen">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="nav-small-screen">
-                <div class="nav-links hidden">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="portfolio.html">Portfolio</a>                
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div class="bars-icon">
-                    <a href="#" class="icon"><i class="fa fa-bars"></i></a>
-                </div>       
-            </div>
-        </div>
+      </div>
     </section>
 
     <section class="projects">
-        <div class="project">
-            <div class="project-img">
-                <img src="social-media-dashboard.gif" alt="social media dashboard example gif">
-            </div>
-            <section class="details">
-                <h3 class="title">Social Media Dashboard (Clone Project)</h3>
-                <div class="project-links">
-                    <a href="https://laratarpley13.github.io/social-media-dashboard-with-theme-switcher-master/" target="_blank">Live Website</a>
-                    <a href="https://github.com/laratarpley13/social-media-dashboard-with-theme-switcher-master" target="_blank">Repository</a>
-                </div>
-                <p class="description">
-                    The goal was to use HTML, CSS, and JavaScript to re-create designs, provided by Frontend Mentor, that were 
-                    in the form of JPG images. There is the option to toggle between light and dark theme and the 
-                    social media tracker is made to be responsive so it will work on both mobile and computers of different sizes.
-                </p>
-                <p class="description">
-                    Pictures of the original design can be found in the design folder of the repository and there
-                    is an example of the design in the README file.
-                </p>
-                <p>Built with: JavaScript, CSS, HTML, and designs provided by Frontend Mentor</p>
-            </section>
-        </div>
-        <div class="project">
-            <div class="project-img">
-                <img src="cook-it-example.gif" alt="CookIt example gif">
-            </div>
-            <section class="details">
-                <h3 class="title">CookIt</h3>
-                <div class="project-links">
-                    <a href="https://cook-it-rho.vercel.app/" target="_blank">Live Website</a>
-                    <a href="https://github.com/laratarpley13/cook-it.git" target="_blank">Repository</a>
-                    <a href="https://github.com/laratarpley13/cook-it-api.git" target="_blank">API</a>
-                </div>
-                <p class="description">
-                    I love to cook and create new recipes and wanted a platform
-                    that would make it easy for anyone to share their recipe creations and receive constructive feedback 
-                    on the recipes in the form of pictures, as I feel like food can be a very visual experience.
-                </p>
-                <p class="description">
-                    This app allows users to create their own account and explore recipes, 
-                    with the option to filter by category or dietary restrictions. Users can also try 
-                    other people's recipes and leave them feedback as well.
-                </p>
-                <p>Built with: React, HTML, CSS, Node.js, Express, PostgreSQL</p>
-            </section>
-        </div>
-        <div class="project">
-            <div class="project-img">
-                <img src="list-manager-example.gif" alt="list manager example gif">
-            </div>
-            <section class="details">
-                <h3 class="title">List Manager</h3>
-                <div class="project-links">
-                    <a href="https://list-manager.vercel.app" target="_blank">Live Website</a>
-                    <a href="https://github.com/laratarpley13/list-manager.git" target="_blank">Repository</a>
-                    <a href="https://github.com/laratarpley13/list-manager-api.git" target="_blank">API</a>
-                </div>
-                <p class="description">
-                    This app is inspired by my family, who likes to make hand-written to-do and shopping lists. However, when it comes 
-                    time to use them to share with each other this makes it difficult to keep track 
-                    of who is in charge of each task. So I wanted to make an easy to use list maker that 
-                    also allows you to share the list with someone else and see when each other accomplishes 
-                    a certain task.
-                </p>
-                <p class="description">
-                    This app allows users to create their own account and create lists that they 
-                    then have the option to share with others.
-                </p>
-                <p>Built with: React, HTML, CSS, Node.js, Express, PostgreSQL</p>
-            </section>
-        </div>
-        <div class="project">
-            <div class="project-img">
-                <img src="best-seller-example.gif" alt="best seller book explorer example gif">
-            </div>
-            <section class="details">
-                <h3 class="title">Best Seller Book Explorer</h3>
-                <div class="project-links">
-                    <a href="https://laratarpley13.github.io/best-seller-book-explorer/" target="_blank">Live Website</a>
-                    <a href="https://github.com/laratarpley13/best-seller-book-explorer.git" target="_blank">Repository</a>
-                </div>
-                <p class="description">
-                    I love to read, but often times I have a hard time figuring out what I would like to read. 
-                    So I wanted to create an application that gives users a different medium in the form 
-                    of YouTube videos, which often include interviews with the author or book reviews, to help 
-                    users decide on their next read.
-                </p>
-                <p class="description">
-                    Users can select which NYT best seller's list to look through and in return for each 
-                    book on the list they will get a picture of the book cover, the name of the book, the author(s), a 
-                    description, the option to display YouTube videos for the book, and a purchase link.
-                </p>
-                <p>Built with: HTML, CSS, JavaScript, jQuery, NYT API, YouTube API</p>
-            </section>
-        </div>
-        
-        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+      <div class="project">
+        <h1>Country Clustering Model</h1>
+        <a
+          href="https://github.com/laratarpley13/country_data_unsupervised_learning/blob/master/country_clustering_model.ipynb"
+          target="blank"
+          >View on GitHub</a
+        >
+      </div>
 
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"
+      ></script>
+      <script src="script.js"></script>
     </section>
+  </body>
+</html>
